@@ -145,7 +145,6 @@ body {
     display: flex;
     align-items: center;
     gap: 0 .5em;
-    /* font-weight: var(--fw-bold); */
     color: hsl(var(--clr-neutral-100), .5);
 }
 

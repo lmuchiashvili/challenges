@@ -1,0 +1,116 @@
+:root {
+    --ff-default: 'Lexend Deca', sans-serif;
+    --ff-secondary: 'Big Shoulders Display';
+
+    --clr-accent-1: hsl(31, 77%, 52%);
+    --clr-accent-2: hsl(184, 100%, 22%);
+    --clr-accent-3: hsl(179, 100%, 13%);
+
+    --clr-neutral: hsl(0, 0%, 95%);
+    --clr-neutral-faded: hsla(0, 0%, 100%, 0.75);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: inherit;
+}
+
+img,
+svg {
+    display: block;
+    width: 100%;
+}
+
+h1 {
+    font-size: 2rem;
+    font-family: var(--ff-secondary);
+    text-transform: uppercase;
+    color: var(--clr-neutral);
+}
+
+p {
+    color: var(--clr-neutral-faded);
+    line-height: 1.5rem;
+}
+
+body {
+    font-size: 0.9375rem;
+    font-family: var(--ff-default);
+    background: var(--clr-neutral);
+}
+
+@media (min-width: 48em) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+}
+
+.cards {
+    margin: 1.5rem;
+    border-radius: .5rem;
+    overflow: hidden;
+}
+
+@media (min-width: 48em) {
+    .cards {
+        display: flex;
+        /* margin: unset; */
+        max-width: 55rem;
+    }
+}
+
+.card {
+    display: flex;
+    flex-flow: column;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+@media (min-width: 48em) {
+    .card {
+        max-width: 18rem;
+        gap: 5rem;    
+        padding: 2.5rem;
+    }
+}
+
+.card-1 {
+    background: var(--clr-accent-1);
+}
+.card-2 {
+    background: var(--clr-accent-2);
+}
+.card-3 {
+    background: var(--clr-accent-3);
+}
+
+.sedans,
+.suvs,
+.luxury {
+    display: flex;
+    flex-flow: column;
+    gap: 1.5rem;
+}
+
+.button {
+    max-width: max-content;
+    padding: .85rem 2rem;
+    border: none;
+    border-radius: 100vw;
+    background: var(--clr-neutral);
+}
+
+.card-1 .button {
+    color: var(--clr-accent-1);
+}
+.card-2 .button {
+    color: var(--clr-accent-2);
+}
+.card-3 .button {
+    color: var(--clr-accent-3);
+}
