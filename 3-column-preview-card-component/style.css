@@ -10,6 +10,9 @@
     --clr-neutral-faded: hsla(0, 0%, 100%, 0.75);
 }
 
+.attribution { font-size: 11px; text-align: center; padding: 1rem 0; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
 * {
     margin: 0;
     padding: 0;
@@ -46,8 +49,15 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100vh;
+        flex-flow: column;
+        min-height: 100vh;
     }
+}
+
+.flex-flow {
+    display: flex;
+    flex-flow: column;
+    gap: 1.5rem;
 }
 
 .cards {
@@ -59,7 +69,6 @@ body {
 @media (min-width: 48em) {
     .cards {
         display: flex;
-        /* margin: unset; */
         max-width: 55rem;
     }
 }
@@ -87,14 +96,6 @@ body {
 }
 .card-3 {
     background: var(--clr-accent-3);
-}
-
-.sedans,
-.suvs,
-.luxury {
-    display: flex;
-    flex-flow: column;
-    gap: 1.5rem;
 }
 
 .button {
