@@ -10,9 +10,6 @@
     --clr-neutral-faded: hsla(0, 0%, 100%, 0.75);
 }
 
-.attribution { font-size: 11px; text-align: center; padding: 1rem 0; }
-.attribution a { color: hsl(228, 45%, 44%); }
-
 * {
     margin: 0;
     padding: 0;
@@ -104,6 +101,7 @@ body {
     border: none;
     border-radius: 100vw;
     background: var(--clr-neutral);
+    cursor: pointer;
 }
 
 .card-1 .button {
@@ -115,3 +113,13 @@ body {
 .card-3 .button {
     color: var(--clr-accent-3);
 }
+
+.button:hover {
+    background-color: transparent;
+    outline: 2px solid var(--clr-neutral);
+    outline-offset: -2px;
+    color: var(--clr-neutral);
+}
+
+.attribution { font-size: 11px; text-align: center; padding: 1rem 0; }
+.attribution a { color: hsl(228, 45%, 44%); }
